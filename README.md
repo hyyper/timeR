@@ -36,7 +36,7 @@ Instantiate a new TimeR object.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
 
 <!-- Include the TimeR library -->
-<script src="TimeR-2.0.1.js"></script>
+<script src="js/TimeR-2.0.1.js"></script>
 
 <!-- Initialize TimeR countDown -->
 <script type="text/javascript">
