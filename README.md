@@ -64,9 +64,6 @@ Instantiate a new TimeR object.
 </script>
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-
 
 ### CSS
 
@@ -98,6 +95,66 @@ Styling Sheets follow Block Element Modifier naming convention,
 }
 ```
 
+### Default Options
+
+```html
+this.defaults = {
+    id        : "TimeR",
+    message   : "All Sold Out!",
+    now       : moment(),
+    end       : moment(),
+    dateFormat: "MM/DD/YYYY HH:mm:ss"
+};
+```
+
+
+### Options
+
+```html
+<!-- Initialize TimeR countDown -->
+<script type="text/javascript">
+	window.addEventListener("load", function() {
+
+		var t = new TimeR({
+			id        : "TimeR", // Optional, defaults 'TimeR'
+			message   : "All Sold Out!", // Optional, default 'All Sold Out!'. Displays when ended.
+			now       : "02/18/2017 8:00:00", 
+			end       : "03/17/2017 1:00:00",
+    		dateFormat: "MM/DD/YYYY HH:mm:ss" // Optional
+
+    		/** 
+    		 * Optional
+    		 * Used to translate Unit Names to any wording,
+    		 * make sure to end iwth Plural as system will
+    		 * automatically remove the 'S' on 1's & 0's.
+    		 */
+			unitNames : {
+				"minutes": "MINS", // End with Plural
+				"seconds": "SECS",
+				"years"  : "YEARS",
+				"days"   : "DAYS",
+				"hours"  : "HOURS"
+			},
+
+			/**
+		     * Optional
+		     * Used to created your own formating and structure.
+		     * time object - {days, hours, minutes, months, seconds}, units {days, hours, milliseconds, minutes, months, seconds, years}
+		     * until string - Month Dayth 
+		     * complete boolean, true when countdown is complete.
+		     */
+			format(time, until, complete) {
+
+			}
+
+		});
+
+		t.countDown();
+
+
+	});
+</script>
+```
 
 ## License
 
