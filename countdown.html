@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
-		<script src="TimeR-2.0.1.js"></script>
-		<script type="text/javascript">
+		<!-- Include TimeR default stylesheet -->
+		<link href="css/default-style.css" rel="stylesheet">
+	</head>
 
+	<body>
+		<!-- Create a container for the TimeR to insert into -->
+		<div id="TimeR"></div>
+		
+		<!-- Create a container for the date of the countdown to insert into -->
+		<div id="until"></div>
+
+		<!-- Include the Moment library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+
+		<!-- Include the TimeR library -->
+		<script src="TimeR-2.0.1.js"></script>
+
+		<!-- Initialize TimeR countDown -->
+		<script type="text/javascript">
 			window.addEventListener("load", function() {
 
 				var t = new TimeR({
@@ -26,42 +41,7 @@
 
 
 			});
-
 		</script>
-
-		<style>
-
-			.countdown {
-				float: left;
-				margin-top: 5px;
-			}
-
-			.countdown--digit {
-				font-size: 2.5em;
-    			font-weight: bold;
-				background-color: #ffda00;
-				padding: 5px;
-				width: 80px;
-				text-align: center;
-				display: inline-block;
-				border-radius: 4px;
-    			margin: 5px 3px 0 0;
-			}
-
-			.countdown--unit {
-				font-size: 0.37em;
-    			font-weight: 100;
-    			color: #ffffff;
-    			background-color: #000000;
-			}
-
-		</style>
-
-	</head>
-
-	<body>
-		<div id="TimeR"></div>
-		<div id="until"></div>
 	</body>
 
 </html>
