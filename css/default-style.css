@@ -1,0 +1,23 @@
+.countdown {
+	float: left;
+	margin-top: 5px;
+}
+
+.countdown--digit {
+	font-size: 2.5em;
+	font-weight: bold;
+	background-color: #ffda00;
+	padding: 5px;
+	width: 80px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 4px;
+	margin: 5px 3px 0 0;
+}
+
+.countdown--unit {
+	font-size: 0.37em;
+	font-weight: 100;
+	color: #ffffff;
+	background-color: #000000;
+}
