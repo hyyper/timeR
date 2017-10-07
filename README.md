@@ -158,4 +158,4 @@ this.defaults = {
 
 ## License
 
-This project is licensed under the BSD 3-clause.
+This project is licensed under the MIT License.
