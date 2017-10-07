@@ -120,7 +120,7 @@ this.defaults = {
 			message   : "All Sold Out!", // Optional, default 'All Sold Out!'. Displays when ended.
 			now       : "02/18/2017 8:00:00", 
 			end       : "03/17/2017 1:00:00",
-    		dateFormat: "MM/DD/YYYY HH:mm:ss" // Optional
+    		dateFormat: "MM/DD/YYYY HH:mm:ss", // Optional
 
     		/** 
     		 * Optional
