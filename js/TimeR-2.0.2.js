@@ -1,4 +1,4 @@
-/*! TimeR v2.0.2 */
+/*! TimeR v2.0.1 */
 "use strict";
 
 /**
@@ -283,6 +283,6 @@ TimeR.prototype.display = function (time) {
 
 
     // Inserts default countdown structure if format function isn't used
-    document.getElementById(this.id).innerHTML = (time) ? '<div class="countdown"> <div class="countdown--digit"> <span id="countdown--days">' + time.days + '</span><div class="countdown--unit">' + time.units['days'] + '</div></div><div class="countdown--digit"><span id="countdown--hours">' + time.hours + '</span><div class="countdown--unit">' + time.units['hours'] + '</div></div><div class="countdown--digit"><span id="countdown--minutes">' + time.minutes + '</span><div class="countdown--unit">' + time.units['minutes'] + '</div></div><div class="countdown--digit"><span id="countdown--seconds">' + time.seconds + '</span><div class="countdown--unit">' + time.units['seconds'] + '</div></div></div>' : this.message;
+    document.getElementById(this.id).innerHTML = (time) ? '<div class="countdown"> <div class="countdown--digit"> <span id="countdown--days">' + time.days + '</span><div class="countdown--unit">' + time.units['days'] + '</div></div><div class="countdown--digit"><span id="countdown--hours">' + time.hours + '</span><div class="countdown--unit">' + time.units['hours'] + '</div></div><div class="countdown--digit"><span id="countdown--minutes">' + time.minutes + '</span><div class="countdown--unit">' + time.units['minutes'] + '</div></div><div class="countdown--digit"><span id="countdown--seconds">' + time.seconds + '</span><div class="countdown--unit">' + time.units['seconds'] + '</div></div></div>' : '<div class="countdown-message">' + this.message + '</div>';
 
 };
